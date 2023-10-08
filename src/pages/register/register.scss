@@ -1,0 +1,88 @@
+.register{
+    background-color: rgba(193, 190, 255);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .card{
+     
+        display: flex;
+        width: 50%;
+        min-height: 550px;
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: white;
+        
+        
+
+        .left{
+            flex: 1;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            gap:50px;
+            justify-content: center;
+            h1{
+                color: #555;
+                
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                gap:30px;
+
+                
+                input{
+                    border:none;
+                    border-bottom: 1px solid lightgray;
+                    padding:20px 10px;
+                }
+                button{
+                    padding: 10px;
+                    background-color: #938eef;
+                    color: white;
+                    font-weight: bold;
+                    width: 50%;
+                    border:none;
+                    cursor: pointer;
+                    
+                }
+            }
+
+        }
+        .right{
+            background:  linear-gradient(rgba(39, 11, 96, 0.5), rgba(39, 11, 96, 0.5)), url("https://images.pexels.com/photos/4881619/pexels-photo-4881619.jpeg?auto=compress&cs=tinysrgb&w=1600");
+            background-size: cover;
+            flex: 1;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            gap:30px;
+            color: white;
+            h1{
+                font-size: 100px;
+                line-height: 100px;
+
+            }
+            p{
+
+            }
+            span{
+                font-size: 14px;
+
+            }
+            button{
+                padding: 10px;
+                background-color: white;
+                color:#938eef;
+                font-weight: bold;
+                width: 50%;
+                border:none;
+                cursor: pointer;
+
+            }
+
+        }
+
+    }
+}
