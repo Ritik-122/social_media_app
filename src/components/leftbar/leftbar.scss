@@ -1,52 +1,59 @@
+@import "../../style.scss";
+
 .leftbar {
-    flex:2;
+  @include themify($themes) {
+    flex: 2;
     position: sticky;
-    top:70px;
+    top: 70px;
     height: calc(100vh - 70px);
     overflow: scroll;
-    &::-webkit-scrollbar{
-        display: none;
+    background-color: themed("bg");
+    color: themed("textColor");
+    &::-webkit-scrollbar {
+      display: none;
     }
-  .container {
-    padding: 20px;
-    hr {
-      margin: 20px 0px;
-      border: none;
-      height: 0.5px;
-      background-color: lightgray;
-    }
-    .menu {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
+    .container {
+      padding: 20px;
+      hr {
+        margin: 20px 0px;
+        border: none;
+        height: 0.5px;
+        background-color: themed("border");
 
-      .user {
+      }
+      .menu {
         display: flex;
-        align-items: center;
+        flex-direction: column;
         gap: 15px;
 
-        img {
-          width: 25px;
-          height: 25px;
-          object-fit: cover;
-          border-radius: 50%;
-        }
-        span {
-            font-size: 14px;
-        }
-      }
-      .item {
-        display: flex;
-        align-items: center;
-        gap: 10px;
+        .user {
+          display: flex;
+          align-items: center;
+          gap: 15px;
 
-        img {
-          width: 20px;
-          height: 15px;
-          object-fit: cover;
-        }
-        span {
+          img {
+            width: 25px;
+            height: 25px;
+            object-fit: cover;
+            border-radius: 50%;
+          }
+          span {
             font-size: 14px;
+          }
+        }
+        .item {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          img {
+            width: 20px;
+            height: 15px;
+            object-fit: cover;
+          }
+          span {
+            font-size: 14px;
+          }
         }
       }
     }
